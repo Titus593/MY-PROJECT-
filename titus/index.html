@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Government Doctors Booking System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="My images/images.jpeg" alt="Uganda Crest">
+                <h1>Uganda Government Doctors</h1>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#hospitals">Hospitals</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Book an Appointment with Government Doctors</h2>
+            <p>Connect with qualified medical professionals across Uganda's government healthcare facilities. Schedule your appointment online and receive confirmation directly to your phone or email.</p>
+            <a href="#doctors" class="btn">Find a Doctor</a>
+        </div>
+    </section>
+    
+    <div class="container">
+        <section class="search-section">
+            <h3>Find a Government Doctor</h3>
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="specialty">Specialty</label>
+                    <select id="specialty">
+                        <option value="">All Specialties</option>
+                        <option value="General Physician">General Physician</option>
+                        <option value="Pediatrician">Pediatrician</option>
+                        <option value="Gynecologist">Gynecologist</option>
+                        <option value="Surgeon">Surgeon</option>
+                        <option value="Dermatologist">Dermatologist</option>
+                        <option value="Psychiatrist">Psychiatrist</option>
+                        <option value="Dentist">Dentist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="region">Region</label>
+                    <select id="region">
+                        <option value="">All Regions</option>
+                        <option value="Central">Central</option>
+                        <option value="Eastern">Eastern</option>
+                        <option value="Northern">Northern</option>
+                        <option value="Western">Western</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Hospital</label>
+                    <select id="hospital">
+                        <option value="">All Hospitals</option>
+                        <option value="Mulago National Referral Hospital">Mulago National Referral Hospital</option>
+                        <option value="Kawempe General Hospital">Kawempe General Hospital</option>
+                        <option value="Jinja Regional Referral Hospital">Jinja Regional Referral Hospital</option>
+                        <option value="Mbale Regional Referral Hospital">Mbale Regional Referral Hospital</option>
+                        <option value="Gulu Regional Referral Hospital">Gulu Regional Referral Hospital</option>
+                        <option value="Mbarara Regional Referral Hospital">Mbarara Regional Referral Hospital</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Search Doctors</button>
+            </form>
+        </section>
+        
+        <section id="doctors">
+            <h2>Available Government Doctors</h2>
+            <div class="doctors-container" id="doctorsContainer">
+                <!-- Doctor 1 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/DR. Sarah Kintu.jpg" alt="Dr. Sarah Kintu">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Kintu</h3>
+                        <span class="doctor-specialty">General Physician</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Mulago National Referral Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Central Region</p>
+                            <p><i class="fas fa-phone"></i> +256 752 123456</p>
+                            <p><i class="fas fa-envelope"></i>sarahkintu@gmail.com</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Monday, Wednesday, Friday</p>
+                        </div>
+                        <button class="book-btn" data-id="1">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 2 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/DR. James Muwonge.jpeg" alt="Dr. James Muwonge">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. James Muwonge</h3>
+                        <span class="doctor-specialty">Pediatrician</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Kawempe General Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Central Region</p>
+                            <p><i class="fas fa-phone"></i> +256 772 234567</p>
+                            <p><i class="fas fa-envelope"></i> jmuwonge@kawempe.go.ug</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Tuesday, Thursday, Saturday</p>
+                        </div>
+                        <button class="book-btn" data-id="2">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 3 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/GRACE KIMERA.jpg_large" alt="Dr. Grace Nakimera">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Grace Nakimera</h3>
+                        <span class="doctor-specialty">Gynecologist</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Jinja Regional Referral Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Eastern Region</p>
+                            <p><i class="fas fa-phone"></i> +256 702 345678</p>
+                            <p><i class="fas fa-envelope"></i> gnakimera@jinjahospital.go.ug</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Monday, Wednesday, Friday</p>
+                        </div>
+                        <button class="book-btn" data-id="3">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 4 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/Dr.Robert ocen.jpg" alt="Dr. Robert Ocen">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Robert Ocen</h3>
+                        <span class="doctor-specialty">Surgeon</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Gulu Regional Referral Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Northern Region</p>
+                            <p><i class="fas fa-phone"></i> +256 782 456789</p>
+                            <p><i class="fas fa-envelope"></i> rocen@guluhospital.go.ug</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Tuesday, Thursday</p>
+                        </div>
+                        <button class="book-btn" data-id="4">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 5 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/Dr. Elizabeth Namugga.jpeg" alt="Dr. Elizabeth Namugga">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Elizabeth Namugga</h3>
+                        <span class="doctor-specialty">Dermatologist</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Mulago National Referral Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Central Region</p>
+                            <p><i class="fas fa-phone"></i> +256 712 567890</p>
+                            <p><i class="fas fa-envelope"></i> enamugga@mulago.go.ug</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Monday, Wednesday, Friday</p>
+                        </div>
+                        <button class="book-btn" data-id="5">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 6 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/Dr. Patrick okello.jpeg" alt="Dr. Patrick Okello">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Patrick Okello</h3>
+                        <span class="doctor-specialty">Psychiatrist</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Mbale Regional Referral Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Eastern Region</p>
+                            <p><i class="fas fa-phone"></i> +256 762 678901</p>
+                            <p><i class="fas fa-envelope"></i> pokello@mbalereferral.go.ug</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Tuesday, Thursday, Saturday</p>
+                        </div>
+                        <button class="book-btn" data-id="6">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 7 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/Dr.susan Atim.jpeg" alt="Dr. Susan Atim">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Susan Atim</h3>
+                        <span class="doctor-specialty">Dentist</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Mbarara Regional Referral Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Western Region</p>
+                            <p><i class="fas fa-phone"></i> +256 752 789012</p>
+                            <p><i class="fas fa-envelope"></i> satim@mbararahospital.go.ug</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Monday, Wednesday, Friday</p>
+                        </div>
+                        <button class="book-btn" data-id="7">Book Appointment</button>
+                    </div>
+                </div>
+                
+                <!-- Doctor 8 -->
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="My images/Dr. David Ssembatya.jpeg" alt="Dr. David Ssembatya">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. David Ssembatya</h3>
+                        <span class="doctor-specialty">General Physician</span>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-hospital"></i> Kawempe General Hospital</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Central Region</p>
+                            <p><i class="fas fa-phone"></i> +256 782 890123</p>
+                            <p><i class="fas fa-envelope"></i> dssembatya@kawempe.go.ug</p>
+                            <p><i class="fas fa-calendar-alt"></i> Available: Tuesday, Thursday, Saturday</p>
+                        </div>
+                        <button class="book-btn" data-id="8">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="booking-modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalDoctorName">Book Appointment</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form" id="bookingForm">
+                    <input type="hidden" id="doctorId">
+                    <div class="form-group">
+                        <label for="patientName">Your Full Name</label>
+                        <input type="text" id="patientName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientPhone">Phone Number</label>
+                        <input type="tel" id="patientPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientEmail">Email Address</label>
+                        <input type="email" id="patientEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentDate">Preferred Date</label>
+                        <input type="date" id="appointmentDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentTime">Preferred Time</label>
+                        <select id="appointmentTime" required>
+                            <option value="">Select Time</option>
+                            <option value="08:00 AM">08:00 AM</option>
+                            <option value="09:00 AM">09:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="02:00 PM">02:00 PM</option>
+                            <option value="03:00 PM">03:00 PM</option>
+                            <option value="04:00 PM">04:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="medicalConcern">Medical Concern</label>
+                        <textarea id="medicalConcern" placeholder="Briefly describe your medical concern"></textarea>
+                    </div>
+                    <button type="submit" class="submit-booking">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>The Uganda Government Doctors Booking System connects patients with qualified medical professionals across government healthcare facilities in Uganda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#doctors">Find a Doctor</a>
+                    <a href="#hospitals">Hospitals</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ministry of Health, Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 414 234567</p>
+                    <p><i class="fas fa-envelope"></i> info@ugandadoctors.go.ug</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Uganda Government Doctors Booking System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
